@@ -1,0 +1,24 @@
+---
+title: "Lab test script"
+author: "Jessica Couture"
+date: "November 9, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Doing some fund R stuff in here.
+
+```{r data}
+library(tidyverse)
+
+dat<-data.frame(A=c(1,2,3,9,8,7,6,5,4,0),
+                B=c(1,5,9,4,12,7,5,6,4,1)) %>%
+  mutate(C=B*A)
+
+dat
+
+```
+
