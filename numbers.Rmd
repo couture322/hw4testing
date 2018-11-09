@@ -23,7 +23,7 @@ dat
 # OK trying to add something?
 
 ah_plot <- ggplot(dat, aes(x = A, y = B)) +
-  geom_point()
+  geom_point(color = "blue")
 
 ```
 
