@@ -130,14 +130,14 @@ $(document).ready(function () {
 
 <p>Doing some fund R stuff in here.</p>
 <pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages -------------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
-<pre><code>## v ggplot2 3.1.0     v purrr   0.2.5
-## v tibble  1.4.2     v dplyr   0.7.7
-## v tidyr   0.8.2     v stringr 1.3.1
-## v readr   1.1.1     v forcats 0.3.0</code></pre>
-<pre><code>## -- Conflicts ----------------------------------------------------------------- tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre><code>## ── Attaching packages ─── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ✔ ggplot2 3.0.0     ✔ purrr   0.2.5
+## ✔ tibble  1.4.2     ✔ dplyr   0.7.6
+## ✔ tidyr   0.8.1     ✔ stringr 1.3.1
+## ✔ readr   1.1.1     ✔ forcats 0.3.0</code></pre>
+<pre><code>## ── Conflicts ────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>dat&lt;-data.frame(A=c(1,2,3,9,8,7,6,5,4,0),
                 B=c(1,5,9,4,12,7,5,6,4,1)) %&gt;%
   mutate(C=B*A)
@@ -154,6 +154,11 @@ dat</code></pre>
 ## 8  5  6 30
 ## 9  4  4 16
 ## 10 0  1  0</code></pre>
+<pre class="r"><code># OK trying to add something?
+
+ah_plot &lt;- ggplot(dat, aes(x = A, y = B)) +
+  geom_point()</code></pre>
+<p>And then some random text…</p>
 
 
 
